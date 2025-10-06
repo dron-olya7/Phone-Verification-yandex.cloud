@@ -53,11 +53,11 @@
 
 Основные таблицы:
 
-**raw_submissions** - сырые данные форм с привязкой к ключу
+- **raw_submissions** - сырые данные форм с привязкой к ключу
 
-**webhook_endpoints** - конфигурация webhook-ов по ключам
+- **webhook_endpoints** - конфигурация webhook-ов по ключам
 
-**incoming_verification_attempts** - логи верификации
+- **incoming_verification_attempts** - логи верификации
 
 ### Настройка базы данных
 
