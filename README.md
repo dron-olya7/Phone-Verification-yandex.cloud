@@ -61,8 +61,9 @@
 
 ### Настройка базы данных
 
-Таблица вебхуков (для хранения endpoint-ов по ключам)
+**Таблица вебхуков**
 
+```sql
 CREATE TABLE webhook_endpoints (
     key Utf8,
     endpoint_url Utf8,
@@ -70,9 +71,11 @@ CREATE TABLE webhook_endpoints (
     created_at Timestamp,
     PRIMARY KEY (key)
 );
+```
 
-Таблица данных форм Tilda (сохраняем ВСЕ данные)
+**Таблица данных форм Tilda** (сохраняем ВСЕ данные)
 
+```sql
 CREATE TABLE raw_submissions (
     id Utf8,
     timestamp Timestamp,
@@ -84,9 +87,11 @@ CREATE TABLE raw_submissions (
     webhook_sent Bool,
     PRIMARY KEY (id)
 );
+```
 
-Таблица логов верификационных попыток из ТГ/WA
+**Таблица логов верификационных попыток** из ТГ/WA
 
+```sql
 CREATE TABLE incoming_verification_attempts (
     id Utf8,
     timestamp Timestamp,
@@ -97,6 +102,7 @@ CREATE TABLE incoming_verification_attempts (
     status Utf8,
     PRIMARY KEY (id)
 );
+```
 
 Сгенирируйте верификационный ключ (для примера использую 73ce67a0c48338cd36b0e63d9b5736f9)
 
