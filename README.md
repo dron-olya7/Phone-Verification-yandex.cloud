@@ -65,7 +65,7 @@
 
 ```sql
 CREATE TABLE webhook_endpoints (
-    key Utf8,
+    key Utf8 NOT NULL,
     endpoint_url Utf8,
     enabled Bool,
     created_at Timestamp,
@@ -77,7 +77,7 @@ CREATE TABLE webhook_endpoints (
 
 ```sql
 CREATE TABLE raw_submissions (
-    id Utf8,
+    id Utf8 NOT NULL,
     timestamp Timestamp,
     phone Utf8,
     source Utf8,
@@ -93,7 +93,7 @@ CREATE TABLE raw_submissions (
 
 ```sql
 CREATE TABLE incoming_verification_attempts (
-    id Utf8,
+    id Utf8 NOT NULL,
     timestamp Timestamp,
     phone Utf8,
     source Utf8,
