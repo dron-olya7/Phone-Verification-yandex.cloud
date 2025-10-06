@@ -108,10 +108,11 @@ CREATE TABLE incoming_verification_attempts (
 
 **Настройте webhook endpoint в YDB**
 
-sql
+```sql
 
 INSERT INTO webhook_endpoints (key, endpoint_url, enabled) 
 VALUES ('73ce67a0c48338cd36b0e63d9b5736f9', 'https://your-site.com/webhook', true);
+```
 
 Настройте вебхук в вашей платформе, например, Тильда https://functions.yandexcloud.net/ваш-ключ-в-yandex-cloud?key=73ce67a0c48338cd36b0e63d9b5736f9
 
