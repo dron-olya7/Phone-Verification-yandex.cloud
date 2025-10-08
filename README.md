@@ -117,6 +117,7 @@ VALUES ('73ce67a0c48338cd36b0e63d9b5736f9', 'https://your-site.com/webhook', tru
 Настройте вебхук в вашей платформе, например, Тильда https://functions.yandexcloud.net/ваш-ключ-в-yandex-cloud?key=73ce67a0c48338cd36b0e63d9b5736f9
 
 Сайт A → Key: "abc123" → Данные в YDB → Webhook для сайта A
+
 Сайт B → Key: "def456" → Данные в YDB → Webhook для сайта B
 
 ## Полный процесс работы
